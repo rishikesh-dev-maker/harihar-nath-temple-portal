@@ -138,6 +138,4 @@ Managing a high-traffic pilgrimage site involves significant logistical challeng
 **Rishikesh Kumar**  
 *Full Stack Developer*  
 Backend: Spring Boot | Frontend: JS/Bootstrap | Database: MySQL
-#   h a r i h a r - n a t h - t e m p l e - p o r t a l 
- 
- 
+#
