@@ -1,0 +1,3053 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba Hariharnath Temple · Sonepur, Bihar | Official Portal</title>
+    <meta name="description" content="Official digital portal and backend management system for Baba Hariharnath Temple, Sonepur, Bihar. Experience centuries of faith, living traditions, sacred worship and the heritage of Harihar Kshetra.">
+    <meta property="og:title" content="Baba Hariharnath Temple · Sonepur, Bihar | Official Portal">
+    <meta property="og:description" content="Official digital portal and backend management system for Baba Hariharnath Temple, Sonepur, Bihar.">
+    <meta name="theme-color" content="#2A1710">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+
+    <!-- Google Fonts: Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <style>
+        :root {
+            --color-temple-brown: #2A1710;
+            --color-temple-brown-light: #3d241c;
+            --color-saffron: #A85420;
+            --color-saffron-light: #c4682a;
+            --color-antique-gold: #C9974A;
+            --color-antique-gold-light: #dbb06a;
+            --color-warm-ivory: #F8F3EA;
+            --color-sand: #E8D8C4;
+            --color-charcoal: #211A16;
+            --color-white: #FFFFFF;
+            --color-off-white: #FCF9F5;
+
+            --color-text-primary: #2A1710;
+            --color-text-secondary: #5a4a42;
+            --color-text-muted: #8a7a72;
+            --color-border-light: rgba(42, 23, 16, 0.08);
+            --color-border-gold: rgba(201, 151, 74, 0.25);
+
+            --shadow-soft: 0 4px 30px rgba(42, 23, 16, 0.04);
+            --shadow-medium: 0 8px 48px rgba(42, 23, 16, 0.08);
+            --shadow-heavy: 0 16px 64px rgba(42, 23, 16, 0.12);
+
+            --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+            --font-serif-alt: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-devanagari: 'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', sans-serif;
+
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-full: 9999px;
+            --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-elegant: cubic-bezier(0.65, 0, 0.35, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-primary);
+            background: var(--color-warm-ivory);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--color-temple-brown); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--color-antique-gold); }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            color: var(--color-temple-brown);
+            line-height: 1.2;
+        }
+        h1 { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 700; }
+        h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+        h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+        h4 { font-size: clamp(1.1rem, 1.5vw, 1.35rem); }
+
+        .text-gold { color: var(--color-antique-gold); }
+        .text-saffron { color: var(--color-saffron); }
+        .lead {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .section-padding { padding: 5rem 0; }
+        @media (max-width: 768px) { .section-padding { padding: 3.5rem 0; } }
+        .section-ivory { background: var(--color-warm-ivory); }
+        .section-sand { background: var(--color-sand); }
+        .section-dark { background: var(--color-temple-brown); color: var(--color-off-white); }
+        .section-dark h2 { color: var(--color-antique-gold-light); }
+        .section-dark p { color: rgba(255, 255, 255, 0.7); }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-antique-gold);
+            background: rgba(201, 151, 74, 0.08);
+            padding: 0.3rem 1.2rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 1rem;
+            border: 1px solid rgba(201, 151, 74, 0.15);
+        }
+
+        .section-title { position: relative; margin-bottom: 0.5rem; }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 2px;
+            background: var(--color-antique-gold);
+            margin-top: 0.8rem;
+            border-radius: var(--radius-full);
+        }
+        .section-title-center::after { margin-left: auto; margin-right: auto; }
+
+        .sacred-om {
+            font-family: var(--font-devanagari);
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--color-antique-gold);
+            opacity: 0.5;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Buttons */
+        .btn-primary-temple {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #fff !important;
+            background: var(--color-temple-brown);
+            border: none;
+            padding: 0.8rem 2.2rem;
+            border-radius: var(--radius-full);
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary-temple:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(42, 23, 16, 0.2);
+            background: var(--color-temple-brown-light);
+        }
+
+        .btn-gold-temple {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #fff !important;
+            background: linear-gradient(135deg, var(--color-antique-gold), var(--color-saffron));
+            border: none;
+            padding: 0.8rem 2.2rem;
+            border-radius: var(--radius-full);
+            transition: all 0.4s var(--transition-smooth);
+            box-shadow: 0 4px 24px rgba(201, 151, 74, 0.25);
+        }
+        .btn-gold-temple:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(201, 151, 74, 0.35);
+        }
+
+        .btn-outline-temple {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-temple-brown);
+            background: transparent;
+            border: 1.5px solid var(--color-temple-brown);
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-full);
+            transition: all 0.4s;
+        }
+        .btn-outline-temple:hover {
+            background: var(--color-temple-brown);
+            color: #fff !important;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+            background: transparent;
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-full);
+            transition: all 0.3s;
+        }
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #fff;
+            color: #fff !important;
+        }
+
+        /* Announcement Bar */
+        .announcement-bar {
+            background: var(--color-temple-brown);
+            color: var(--color-off-white);
+            font-size: 0.75rem;
+            padding: 0.4rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(201, 151, 74, 0.2);
+            font-weight: 400;
+            letter-spacing: 0.03em;
+        }
+        .announcement-bar i { color: var(--color-antique-gold); margin-right: 0.5rem; }
+
+        /* Navbar */
+        .temple-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1050;
+            background: transparent;
+            padding: 0.6rem 0;
+            transition: all 0.5s var(--transition-elegant);
+        }
+        .temple-navbar.scrolled {
+            background: rgba(248, 243, 234, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 2px 40px rgba(42, 23, 16, 0.08);
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .temple-navbar .brand-symbol {
+            font-family: var(--font-devanagari);
+            font-size: 2rem;
+            color: var(--color-antique-gold);
+            line-height: 1;
+        }
+        .temple-navbar .brand-text strong {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            letter-spacing: 0.06em;
+            display: block;
+            transition: color 0.3s;
+        }
+        .temple-navbar.scrolled .brand-text strong { color: var(--color-temple-brown); }
+        .temple-navbar .brand-text small {
+            font-family: var(--font-devanagari);
+            font-size: 0.62rem;
+            color: rgba(255, 255, 255, 0.6);
+            display: block;
+        }
+        .temple-navbar.scrolled .brand-text small { color: var(--color-text-secondary); }
+
+        .temple-navbar .nav-link {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85) !important;
+            padding: 0.4rem 0.9rem !important;
+            border-radius: var(--radius-full);
+            transition: all 0.3s;
+        }
+        .temple-navbar.scrolled .nav-link { color: var(--color-temple-brown) !important; }
+        .temple-navbar .nav-link:hover, .temple-navbar .nav-link.active {
+            color: var(--color-antique-gold) !important;
+            background: rgba(201, 151, 74, 0.1);
+        }
+
+        .temple-navbar .dropdown-menu {
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-medium);
+            background: rgba(248, 243, 234, 0.98);
+            padding: 0.5rem 0;
+        }
+        .temple-navbar .dropdown-item {
+            font-size: 0.8rem;
+            padding: 0.4rem 1.5rem;
+            color: var(--color-text-primary);
+        }
+        .temple-navbar .dropdown-item:hover {
+            background: rgba(201, 151, 74, 0.08);
+            color: var(--color-antique-gold);
+        }
+
+        .btn-temple-nav {
+            color: #fff !important;
+            background: rgba(201, 151, 74, 0.2);
+            border: 1px solid rgba(201, 151, 74, 0.3);
+            padding: 0.4rem 1.2rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .temple-navbar.scrolled .btn-temple-nav {
+            color: var(--color-temple-brown) !important;
+            background: rgba(201, 151, 74, 0.12);
+        }
+        .btn-temple-nav:hover {
+            background: var(--color-antique-gold) !important;
+            color: #fff !important;
+        }
+
+        .btn-admin-nav {
+            color: var(--color-antique-gold-light) !important;
+            background: rgba(42, 23, 16, 0.4);
+            border: 1px solid rgba(201, 151, 74, 0.4);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .temple-navbar.scrolled .btn-admin-nav {
+            color: var(--color-temple-brown) !important;
+            border-color: var(--color-antique-gold);
+            background: transparent;
+        }
+        .btn-admin-nav:hover {
+            background: var(--color-temple-brown) !important;
+            color: #fff !important;
+        }
+
+        /* Mobile Drawer */
+        .mobile-nav-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            max-width: 85vw;
+            height: 100vh;
+            background: var(--color-warm-ivory);
+            z-index: 1060;
+            padding: 2rem 1.8rem;
+            overflow-y: auto;
+            transition: right 0.5s var(--transition-elegant);
+            box-shadow: var(--shadow-heavy);
+        }
+        .mobile-nav-drawer.open { right: 0; }
+        .drawer-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1059;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+        }
+        .drawer-overlay.open { opacity: 1; visibility: visible; }
+        .drawer-nav { list-style: none; padding: 0; margin: 0; }
+        .drawer-nav li { margin-bottom: 0.3rem; }
+        .drawer-nav a {
+            display: block;
+            padding: 0.6rem 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-primary);
+            border-radius: var(--radius-md);
+        }
+        .drawer-nav a:hover {
+            background: rgba(201, 151, 74, 0.08);
+            color: var(--color-antique-gold);
+        }
+
+        /* Hero Section & Responsive Presentation */
+        .hero-section {
+            position: relative;
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #120905;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,
+                rgba(18, 9, 5, 0.95) 0%,
+                rgba(18, 9, 5, 0.8) 25%,
+                rgba(42, 23, 16, 0.4) 50%,
+                transparent 100%),
+                linear-gradient(to top,
+                rgba(18, 9, 5, 0.7) 0%,
+                transparent 25%);
+            z-index: 2;
+            pointer-events: none;
+        }
+        .hero-slider {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            background-color: #120905;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
+            pointer-events: none;
+            background-color: #120905;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-slide.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        /* Fully responsive, aspect-ratio preserved, fills hero section without distortion */
+        .hero-bg-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+            opacity: 1;
+            display: block;
+        }
+        .hero-slide.active .hero-bg-image {
+            transform: none !important;
+        }
+
+        /* Hero Slider Navigation & Dot Indicators */
+        .hero-slider-nav {
+            position: absolute;
+            bottom: 2.2rem;
+            right: 2.5rem;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(42, 23, 16, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 0.5rem 1.1rem;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(201, 151, 74, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        }
+        .hero-slider-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-size: 0.85rem;
+            padding: 0;
+        }
+        .hero-slider-btn:hover {
+            background: var(--color-antique-gold);
+            color: var(--color-temple-brown);
+            border-color: var(--color-antique-gold);
+            transform: scale(1.08);
+        }
+        .hero-slider-dots {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hero-slider-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.35);
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-slider-dot.active {
+            width: 26px;
+            background: var(--color-antique-gold);
+            box-shadow: 0 0 10px rgba(201, 151, 74, 0.7);
+        }
+        .hero-slide-caption {
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            margin-right: 0.35rem;
+            white-space: nowrap;
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .hero-slide-caption {
+                display: inline-block;
+            }
+        }
+        @media (max-width: 991.98px) {
+            .hero-section {
+                min-height: 80svh;
+            }
+            .hero-content {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-section {
+                min-height: 100svh;
+                padding: 4.5rem 0 3.5rem;
+            }
+            .hero-bg-image {
+                object-position: center center;
+            }
+            .hero-content {
+                padding: 1rem 0;
+            }
+            .hero-content h1 {
+                font-size: 2.1rem;
+            }
+            .hero-slider-nav {
+                right: 50%;
+                transform: translateX(50%);
+                bottom: 1.25rem;
+                padding: 0.4rem 0.8rem;
+                gap: 0.5rem;
+            }
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            padding: 2.2rem 0;
+            color: #fff;
+            max-width: 620px;
+            background: transparent;
+        }
+        .hero-content h1 {
+            color: #fff;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+        .hero-content p {
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+        .hero-content .hero-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-antique-gold);
+            border: 1px solid rgba(201, 151, 74, 0.3);
+            padding: 0.3rem 1.2rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 1.2rem;
+            background: rgba(42, 23, 16, 0.4);
+            backdrop-filter: blur(4px);
+        }
+        .hero-content .hero-sub {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+            border-left: 3px solid var(--color-antique-gold);
+            padding-left: 1.2rem;
+            margin: 1rem 0 1.5rem;
+        }
+
+        /* Cards & Sidebar */
+        .temple-sidebar {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 1.8rem 1.5rem;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--color-border-light);
+            position: sticky;
+            top: 90px;
+        }
+        .temple-sidebar h4 {
+            border-bottom: 2px solid var(--color-antique-gold);
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        .temple-sidebar .nav-link {
+            padding: 0.5rem 0.8rem;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            font-size: 0.85rem;
+            border-left: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .temple-sidebar .nav-link:hover, .temple-sidebar .nav-link.active {
+            background: rgba(201, 151, 74, 0.05);
+            color: var(--color-antique-gold);
+            border-left-color: var(--color-antique-gold);
+            padding-left: 1.1rem;
+        }
+
+        .temple-card {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 1.8rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s var(--transition-elegant);
+            height: 100%;
+            border: 1px solid var(--color-border-light);
+            position: relative;
+            overflow: hidden;
+        }
+        .temple-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+        .temple-card .card-icon {
+            font-size: 2.2rem;
+            color: var(--color-antique-gold);
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 2.2rem;
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--color-border-light);
+        }
+        .timeline-item:last-child { padding-bottom: 0; border-left-color: transparent; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-antique-gold);
+            border: 2px solid var(--color-warm-ivory);
+            box-shadow: 0 0 0 3px var(--color-antique-gold);
+        }
+        .timeline-item .timeline-year {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--color-antique-gold);
+            min-width: 80px;
+        }
+
+        /* Aarti Schedule Item */
+        .aarti-timeline { display: flex; flex-direction: column; gap: 0.75rem; }
+        .aarti-item {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            padding: 0.8rem 1.2rem;
+            background: #fff;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--color-antique-gold);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s;
+        }
+        .aarti-item:hover { transform: translateX(4px); }
+        .aarti-item .aarti-time {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--color-antique-gold);
+            min-width: 90px;
+        }
+        .aarti-item .aarti-name { font-weight: 500; font-size: 0.95rem; }
+        .aarti-item .aarti-desc { font-size: 0.8rem; color: var(--color-text-muted); margin-left: auto; }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+        .gallery-grid .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .gallery-grid .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+        .gallery-grid .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-grid .gallery-item .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(42, 23, 16, 0.6), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.2rem;
+        }
+        .gallery-grid .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-grid .gallery-item .gallery-overlay span {
+            color: #fff;
+            font-family: var(--font-serif);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 992px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 576px) { .gallery-grid { grid-template-columns: 1fr; } }
+
+        /* Map Wrapper */
+        .temple-map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--color-border-light);
+            background-color: #f0f0f0;
+        }
+        .temple-map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* CTA */
+        .temple-cta {
+            background: linear-gradient(135deg, var(--color-temple-brown) 0%, var(--color-charcoal) 100%);
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Footer */
+        .temple-footer {
+            background: var(--color-charcoal);
+            color: rgba(255, 255, 255, 0.5);
+            padding: 4rem 0 2rem;
+            border-top: 2px solid rgba(201, 151, 74, 0.15);
+        }
+        .temple-footer h4 { color: var(--color-antique-gold-light); font-size: 0.95rem; margin-bottom: 1rem; }
+        .temple-footer .footer-links { list-style: none; padding: 0; margin: 0; }
+        .temple-footer .footer-links li { margin-bottom: 0.35rem; }
+        .temple-footer .footer-links a { color: rgba(255, 255, 255, 0.45); font-size: 0.85rem; }
+        .temple-footer .footer-links a:hover { color: var(--color-antique-gold-light); }
+
+        /* Page Loader */
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            background: var(--color-temple-brown);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.6s;
+        }
+        .page-loader.hidden { opacity: 0; pointer-events: none; }
+        .loader-om { font-family: var(--font-devanagari); font-size: 4rem; color: var(--color-antique-gold); }
+
+        /* Scroll Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--color-temple-brown);
+            color: #fff;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { background: var(--color-antique-gold); }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9998;
+            background: rgba(33, 26, 22, 0.95);
+            backdrop-filter: blur(12px);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 0.8rem 0;
+            transform: translateY(100%);
+            transition: transform 0.5s;
+        }
+        .cookie-banner.show { transform: translateY(0); }
+
+        /* Admin Portal Styles */
+        .stat-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 1.2rem;
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-soft);
+        }
+        .stat-card .stat-val {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: var(--font-serif);
+            color: var(--color-temple-brown);
+            line-height: 1.1;
+        }
+        .stat-card .stat-lbl {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-top: 0.2rem;
+        }
+        .badge-status-PENDING { background-color: #f59e0b; color: #fff; }
+        .badge-status-CONFIRMED { background-color: #10b981; color: #fff; }
+        .badge-status-CANCELLED { background-color: #ef4444; color: #fff; }
+        .badge-status-COMPLETED { background-color: #3b82f6; color: #fff; }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== LOADER ===== -->
+    <div class="page-loader" id="pageLoader" role="status" aria-label="Loading">
+        <div class="loader-om">ॐ</div>
+        <div style="width: 60px; height: 2px; background: rgba(201, 151, 74, 0.3); border-radius: 999px; margin-top: 1rem; overflow: hidden;">
+            <div style="width: 50%; height: 100%; background: var(--color-antique-gold); animation: loadBar 1.2s ease-in-out infinite;"></div>
+        </div>
+    </div>
+
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="announcement-bar" id="announcementBar">
+        <div class="container">
+            <i class="bi bi-bell-fill"></i>
+            <span id="announcementText">🪔 Daily Darshan & Aarti Schedule · Kartik Purnima preparations begin at Harihar Kshetra</span>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg temple-navbar" id="mainNavbar" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <span class="brand-symbol">ॐ</span>
+                <span class="brand-text">
+                    <strong>BABA HARIHARNATH</strong>
+                    <small>बाबा हरिहरनाथ मंदिर · सोनपुर</small>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse d-none d-lg-block" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Temple</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#history">History</a></li>
+                            <li><a class="dropdown-item" href="#architecture">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#worship">Worship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#festivals">Festivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#visit">Visit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lookup">Check Status</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-temple-nav" onclick="openBookingModal()">
+                            <i class="bi bi-calendar-heart me-1"></i>Plan Darshan
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-admin-nav" onclick="openAdminModal()">
+                            <i class="bi bi-shield-lock-fill me-1"></i>Admin Portal
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler text-white border-0" type="button" id="mobileNavToggle" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE DRAWER ===== -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-nav-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile navigation">
+        <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+            <div class="d-flex align-items-center gap-2">
+                <span class="fs-2 text-gold">ॐ</span>
+                <strong>Baba Hariharnath</strong>
+            </div>
+            <button class="btn-close" id="drawerClose" aria-label="Close"></button>
+        </div>
+        <ul class="drawer-nav">
+            <li><a href="#home"><i class="bi bi-house me-2 text-gold"></i>Home</a></li>
+            <li><a href="#about"><i class="bi bi-info-circle me-2 text-gold"></i>About</a></li>
+            <li><a href="#history"><i class="bi bi-clock-history me-2 text-gold"></i>History</a></li>
+            <li><a href="#architecture"><i class="bi bi-building me-2 text-gold"></i>Architecture</a></li>
+            <li><a href="#worship"><i class="bi bi-brightness-high me-2 text-gold"></i>Worship & Aarti</a></li>
+            <li><a href="#festivals"><i class="bi bi-calendar-event me-2 text-gold"></i>Festivals</a></li>
+            <li><a href="#events"><i class="bi bi-calendar3 me-2 text-gold"></i>Events</a></li>
+            <li><a href="#media"><i class="bi bi-images me-2 text-gold"></i>Gallery</a></li>
+            <li><a href="#visit"><i class="bi bi-compass me-2 text-gold"></i>Visit & Map</a></li>
+            <li><a href="#lookup"><i class="bi bi-search me-2 text-gold"></i>Check Status</a></li>
+            <li><a href="#contact"><i class="bi bi-envelope me-2 text-gold"></i>Contact</a></li>
+        </ul>
+        <div class="mt-4 pt-3 border-top d-flex flex-column gap-2">
+            <button class="btn btn-gold-temple w-100 justify-content-center" onclick="closeDrawer(); openBookingModal();">
+                <i class="bi bi-calendar-heart me-2"></i>Plan Darshan
+            </button>
+            <button class="btn btn-outline-temple w-100 justify-content-center" onclick="closeDrawer(); openAdminModal();">
+                <i class="bi bi-shield-lock-fill me-2"></i>Admin Dashboard
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section id="home" class="hero-section">
+            <!-- Automatic Image Slider (Changes every 5 seconds with smooth transition, fully responsive, zero distortion) -->
+            <div class="hero-slider" id="heroSlider" aria-label="Baba Hariharnath Temple Sacred Darshan Gallery">
+                <div class="hero-slide active" data-slide="0" data-caption="Sandhya Aarti & Holy Confluence">
+                    <img src="/assets/h1.png"
+                         onerror="this.onerror=null; this.src='/assets/temple_evening_aarti.jpg';"
+                         alt="Baba Hariharnath Temple Evening Aarti & Confluence"
+                         class="hero-bg-image"
+                         loading="eager" />
+                </div>
+                <div class="hero-slide" data-slide="1" data-caption="Sacred Shivalinga Darshan">
+                    <img src="/assets/h2 (1).png"
+                         onerror="this.onerror=null; this.src='/assets/sacred_shivalinga_darshan.jpg';"
+                         alt="Sacred Shiva Lingam Darshan with Tripundra and Offerings"
+                         class="hero-bg-image"
+                         loading="lazy" />
+                </div>
+                <div class="hero-slide" data-slide="2" data-caption="Garbhagriha & Sacred Diyas">
+                    <img src="/assets/h2 (2).png"
+                         onerror="this.onerror=null; this.src='/assets/temple_deepotsav_lamps.jpg';"
+                         alt="Sanctum Sanctorum Garbhagriha & Deepams"
+                         class="hero-bg-image"
+                         loading="lazy" />
+                </div>
+                <div class="hero-slide" data-slide="3" data-caption="Mandir Dome & Courtyard">
+                    <img src="/assets/h2 (3).png"
+                         onerror="this.onerror=null; this.src='/assets/hariharnath_temple_courtyard.jpg';"
+                         alt="Baba Hariharnath Temple Dome & Courtyard, Sonepur"
+                         class="hero-bg-image"
+                         loading="lazy" />
+                </div>
+
+            </div>
+
+            <!-- Slider Navigation Controls & Indicators -->
+            <div class="hero-slider-nav" id="heroSliderNav" aria-label="Hero Slider Controls">
+                <span class="hero-slide-caption" id="heroSlideCaption">✦ Sandhya Aarti & Holy Confluence ✦</span>
+                <button type="button" class="hero-slider-btn" id="heroSliderPrev" aria-label="Previous Slide">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <div class="hero-slider-dots" id="heroSliderDots" role="tablist"></div>
+                <button type="button" class="hero-slider-btn" id="heroSliderNext" aria-label="Next Slide">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="sacred-om">ॐ</span>
+                    <div class="hero-badge">✦ Harihar Kshetra · Sonepur, Bihar ✦</div>
+                    <h1>BABA HARIHARNATH</h1>
+                    <div class="hero-sub">"Where Hari and Har meet in devotion."</div>
+                    <div class="d-flex align-items-center gap-2 mb-3 text-white-50">
+                        <i class="bi bi-geo-alt text-gold"></i> Confluence of Ganga and Gandak · Sonepur, Saran, Bihar
+                    </div>
+                    <p style="color:rgba(255,255,255,0.75);font-size:1.05rem;max-width:580px;margin-bottom:2rem;">
+                        Experience centuries of faith, living Vedic traditions, daily aarti worship, and the sacred heritage of Harihar Kshetra.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-gold-temple" onclick="openBookingModal()">
+                            <span>Plan Your Darshan <i class="bi bi-arrow-right ms-2"></i></span>
+                        </button>
+                        <a href="#worship" class="btn btn-outline-light">Daily Aarti Timings</a>
+                        <a href="#lookup" class="btn btn-outline-light"><i class="bi bi-search me-1"></i>Track Booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SACRED INTRODUCTION ===== -->
+        <section id="about" class="section-padding section-ivory">
+            <div class="container">
+                <div class="row g-5">
+                    <aside class="col-lg-3">
+                        <div class="temple-sidebar" data-aos="fade-right">
+                            <h4><i class="bi bi-compass-fill me-2 text-gold"></i> Temple Navigation</h4>
+                            <nav class="nav flex-column">
+                                <a class="nav-link active" href="#about"><i class="bi bi-info-circle me-2"></i>About</a>
+                                <a class="nav-link" href="#history"><i class="bi bi-clock-history me-2"></i>History</a>
+                                <a class="nav-link" href="#architecture"><i class="bi bi-building me-2"></i>Architecture</a>
+                                <a class="nav-link" href="#worship"><i class="bi bi-brightness-high me-2"></i>Worship</a>
+                                <a class="nav-link" href="#festivals"><i class="bi bi-calendar-event me-2"></i>Festivals</a>
+                                <a class="nav-link" href="#lookup"><i class="bi bi-search me-2"></i>Check Status</a>
+                                <a class="nav-link" href="#contact"><i class="bi bi-envelope me-2"></i>Contact</a>
+                            </nav>
+                        </div>
+                    </aside>
+
+                    <div class="col-lg-9">
+                        <div data-aos="fade-left">
+                            <span class="section-label">Sacred Confluence</span>
+                            <h2 class="section-title">Welcome to <span class="text-gold">Baba Hariharnath Temple</span></h2>
+                            <p class="lead">Nestled in the sacred landscape of Sonepur, where the Ganga and Gandak rivers meet, this ancient temple stands as a testament to centuries of devotion and spiritual harmony.</p>
+
+                            <div class="row g-4 mt-2">
+                                <div class="col-md-6">
+                                    <div class="temple-card">
+                                        <span class="card-icon"><i class="bi bi-heart-fill"></i></span>
+                                        <h3>Hari + Har Confluence</h3>
+                                        <p>The divine union of Lord Vishnu (Hari) and Lord Shiva (Har) — an unparalleled confluence of Vaishnavism and Shaivism in one sanctum sanctorum.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="temple-card">
+                                        <span class="card-icon"><i class="bi bi-water"></i></span>
+                                        <h3>Sacred Sangam</h3>
+                                        <p>Positioned at the holy confluence of the sacred Ganga and Gandak rivers, drawing millions of pilgrims from all over India during Kartik Purnima.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="temple-card">
+                                        <span class="card-icon"><i class="bi bi-clock-history"></i></span>
+                                        <h3>Centuries of Faith</h3>
+                                        <p>With ancient origins tracing to the Ramayana era and Gajendra Moksha legend, the temple stands as a timeless beacon of Dharma and peace.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="temple-card">
+                                        <span class="card-icon"><i class="bi bi-people"></i></span>
+                                        <h3>Living Tradition</h3>
+                                        <p>A thriving pilgrimage center where daily Vedic rituals, abhisheks, and evening aartis are conducted with pure Vedic rites and devotion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HISTORY ===== -->
+        <section id="history" class="section-padding section-sand">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-label section-title-center">Heritage</span>
+                    <h2 class="section-title section-title-center">The <span class="text-gold">Sacred Timeline</span></h2>
+                    <p class="lead">Centuries of devotion, preserved in stone, scripture, and sacred ritual</p>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10">
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-year">Puranic</div>
+                                <div class="timeline-content">
+                                    <h4>Gajendra Moksha &amp; Ram-Vishwamitra</h4>
+                                    <p>Traditional scriptures record Lord Vishnu's deliverance of Gajendra and Lord Rama's visit accompanied by Sage Vishwamitra on their way to Janakpur.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="timeline-year">~1500</div>
+                                <div class="timeline-content">
+                                    <h4>Traditional Narratives</h4>
+                                    <p>The Harihar Kshetra established itself as a paramount pilgrimage center for northern India, uniting Shiva and Vishnu devotees.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-year">Pre-1757</div>
+                                <div class="timeline-content">
+                                    <h4>Early Temple Sanctum</h4>
+                                    <p>The consecrated stone shrine and Shivalinga of Hariharnath was fortified by regional chieftains and devotees.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="timeline-year">1757+</div>
+                                <div class="timeline-content">
+                                    <h4>Temple Complex Renovation</h4>
+                                    <p>Raja Ram Narain and subsequent patrons reconstructed the towering Shikhara, Mandapa, and ghats at the riverfront.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="timeline-year">Present</div>
+                                <div class="timeline-content">
+                                    <h4>Modern Harihar Nath Temple Digital Era</h4>
+                                    <p>Today, the temple stands as a modern pilgrimage hub with digital darshan booking, live timings, and streamlined facilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ARCHITECTURE ===== -->
+        <section id="architecture" class="section-padding section-ivory">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <span class="section-label">Architecture</span>
+                        <h2 class="section-title">Sacred <span class="text-gold">Architecture</span></h2>
+                        <p class="lead">The temple's architecture reflects classical North Indian Nagara elements with sacred geometric alignments.</p>
+                        <p>Every pillar, arch, sanctum door, and kalasha is aligned according to traditional Vastu and temple architecture canons. The inner sanctum houses the sacred Harihar Shivalinga, crowned by a high Shikhara that overlooks the holy river basin.</p>
+                        <div class="row g-3 mt-3">
+                            <div class="col-sm-6">
+                                <div class="temple-card">
+                                    <span class="card-icon"><i class="bi bi-grid"></i></span>
+                                    <h3>Sacred Mandapa</h3>
+                                    <p>Spacious gathering hall for devotional kirtan, sankalp rituals, and prayer assemblies.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="temple-card">
+                                    <span class="card-icon"><i class="bi bi-gem"></i></span>
+                                    <h3>Garbhagriha</h3>
+                                    <p>The sanctum sanctorum illuminated by pure brass deepaks where the sacred deity receives daily abhishekam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-medium);">
+                            <img src="https://coinventmediastorage.blob.core.windows.net/media-storage-container/gphoto_Ei1IYXJpaGFyYW5hdGggUmQsIFNvbmVwdXIsIEJpaGFyIDg0MTEwMSwgSW5kaWEiLiosChQKEgkf0YkW-FvtOREAMVfIJDjarxIUChIJm2NsaOpb7TkRjbMEPEFXXxc_0.jpg" alt="Temple Architecture" style="width:100%;height:450px;object-fit:cover;" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WORSHIP / AARTI ===== -->
+        <section id="worship" class="section-padding section-sand">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-label section-title-center">Worship &amp; Aarti</span>
+                    <h2 class="section-title section-title-center">Daily <span class="text-gold">Ritual Timings</span></h2>
+                    <p class="lead">Live schedule synchronized directly from temple administration database</p>
+                </div>
+                <div class="row g-5 mt-3">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h3 style="font-size:1.25rem;margin:0;">Aarti &amp; Ritual Schedule</h3>
+                            <span class="badge bg-light text-dark border px-2 py-1" style="font-size:0.75rem;"><i class="bi bi-database-check text-success me-1"></i>Live from Database</span>
+                        </div>
+                        <!-- Dynamic Aarti Timeline Container -->
+                        <div class="aarti-timeline" id="aartiContainer">
+                            <div class="text-center py-4 text-muted"><div class="spinner-border spinner-border-sm text-gold me-2"></div>Loading latest Aarti schedule...</div>
+                        </div>
+                        <p class="mt-3" style="font-size:0.8rem;color:var(--color-text-muted);">
+                            <i class="bi bi-info-circle me-1"></i> Aarti timings may shift during solar eclipses, Kartik Purnima, and Maha Shivratri.
+                        </p>
+                    </div>
+                    <div class="col-lg-5" data-aos="fade-left">
+                        <h3 style="font-size:1.25rem;margin-bottom:1rem;">Available Puja Services</h3>
+                        <div class="row g-3" id="servicesSummaryContainer">
+                            <div class="col-12">
+                                <div class="temple-card">
+                                    <span class="card-icon"><i class="bi bi-droplet"></i></span>
+                                    <h3>Nitya Abhishek</h3>
+                                    <p>Daily ritual bathing of the deity with Gangajal, panchamrit, and fresh bilva leaves.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="temple-card">
+                                    <span class="card-icon"><i class="bi bi-flower1"></i></span>
+                                    <h3>Archana</h3>
+                                    <p>Offering of sacred flowers, tulsi, and chanting of divine ashtothara shatanama.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="temple-card">
+                                    <span class="card-icon"><i class="bi bi-fire"></i></span>
+                                    <h3>Rudrabhishek</h3>
+                                    <p>Complete Vedic chanting of Sri Rudram for family wellbeing, health, and peace.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BOOKING LOOKUP SECTION ===== -->
+        <section id="lookup" class="section-padding section-ivory">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <div class="text-center mb-4">
+                            <span class="section-label section-title-center">Check Status</span>
+                            <h2 class="section-title section-title-center">Track Your <span class="text-gold">Darshan Booking</span></h2>
+                            <p class="lead">Enter your generated Request ID to view live confirmation and status</p>
+                        </div>
+                        <div class="p-4 p-md-5" style="background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-medium);border:1px solid var(--color-border-light);">
+                            <form id="lookupForm" onsubmit="handleLookupBooking(event)" class="row g-3">
+                                <div class="col-md-8">
+                                    <label for="lookupRequestId" class="form-label fw-bold small">Request ID (e.g. BHT-2026-000001)</label>
+                                    <input type="text" class="form-control form-control-lg" id="lookupRequestId" placeholder="BHT-2026-000001" required style="border-radius:var(--radius-md);">
+                                </div>
+                                <div class="col-md-4 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-gold-temple w-100 justify-content-center" id="lookupBtn" style="height:48px;">
+                                        <i class="bi bi-search me-2"></i><span>Check Status</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="lookupResult" class="mt-4" style="display:none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FESTIVALS ===== -->
+        <section id="festivals" class="section-padding section-sand">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-label section-title-center">Festivals</span>
+                    <h2 class="section-title section-title-center">Sacred <span class="text-gold">Celebrations</span></h2>
+                    <p class="lead">Rejoice in the grand celebrations of Harihar Kshetra</p>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                        <div class="temple-card text-center">
+                            <span class="card-icon"><i class="bi bi-star-fill"></i></span>
+                            <h3>Kartik Purnima</h3>
+                            <p>The holiest confluence bathing day, celebrated with 108 deepak mahapuja and millions of pilgrims.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="temple-card text-center">
+                            <span class="card-icon"><i class="bi bi-brightness-alt-high"></i></span>
+                            <h3>Sonepur Mela</h3>
+                            <p>Asia's historic cultural gathering rooted in temple tradition, spiritual discourse, and fairs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="temple-card text-center">
+                            <span class="card-icon"><i class="bi bi-calendar-event"></i></span>
+                            <h3>Shravan Mahotsav</h3>
+                            <p>Holy month of Somwar vrat, Kanwar pilgrimages, and continuous sacred Ganga jal offering.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="temple-card text-center">
+                            <span class="card-icon"><i class="bi bi-moon-stars"></i></span>
+                            <h3>Maha Shivratri</h3>
+                            <p>The great sacred night of Shiva, observed with four-pahar abhisheka and all-night chanting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MEDIA / GALLERY ===== -->
+        <section id="media" class="section-padding section-ivory">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-label section-title-center">Media Gallery</span>
+                    <h2 class="section-title section-title-center">Temple <span class="text-gold">Gallery</span></h2>
+                    <p class="lead">Capturing the divine essence and heritage of Harihar Nath Temple</p>
+                </div>
+                <div class="gallery-grid mt-4" id="galleryContainer">
+                    <!-- Default items, enriched from API -->
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEBjfuvG44ar02MZKAlMvbOd213M4CacO5a6ug86Ak6BGNuetf3w0NJ7PF&s=10" alt="Temple deity" loading="lazy" />
+                        <div class="gallery-overlay"><span>Deity Darshan</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm1Hv20p2zdnIe2Nhu7ucJHej97_CedzwtQy9T_ksd0w&s=10" alt="River ceremony" loading="lazy" />
+                        <div class="gallery-overlay"><span>River Worship</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://coinventmediastorage.blob.core.windows.net/media-storage-container/gphoto_Ei1IYXJpaGFyYW5hdGggUmQsIFNvbmVwdXIsIEJpaGFyIDg0MTEwMSwgSW5kaWEiLiosChQKEgkf0YkW-FvtOREAMVfIJDjarxIUChIJm2NsaOpb7TkRjbMEPEFXXxc_0.jpg" alt="Temple architecture" loading="lazy" />
+                        <div class="gallery-overlay"><span>Sacred Architecture</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image.png" alt="Evening Lamps" loading="lazy" />
+                        <div class="gallery-overlay"><span>Evening Lamps</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VISIT / MAP ===== -->
+        <section id="visit" class="section-padding section-sand">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <span class="section-label">Visit</span>
+                        <h2 class="section-title">Plan Your <span class="text-gold">Pilgrimage</span></h2>
+                        <p class="lead">Sacred journey to Baba Hariharnath Temple, Sonepur</p>
+                        <div class="mt-4 p-4" style="background:#fff;border-radius:var(--radius-lg);border-left:3px solid var(--color-antique-gold);">
+                            <h4 style="font-size:1rem;margin-bottom:0.5rem;"><i class="bi bi-geo-alt me-2 text-gold"></i>Temple Address</h4>
+                            <p style="font-size:0.9rem;color:var(--color-text-secondary);margin:0;">
+                                Harihar Nath Mandir, Hariharnath - Pahlezaghat Rd, Sonepur, Bihar 841101, India
+                            </p>
+                            <hr style="margin:0.8rem 0;border-color:var(--color-border-light);" />
+                            <div class="d-flex flex-wrap gap-3 small">
+                                <div><i class="bi bi-car-front me-1 text-gold"></i>Road: JP Setu / Digha</div>
+                                <div><i class="bi bi-train me-1 text-gold"></i>Rail: Sonepur Junction</div>
+                                <div><i class="bi bi-airplane me-1 text-gold"></i>Air: Patna Airport (20 km)</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex flex-wrap gap-2">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Harihar%20Nath%20Mandir%2C%20Sonepur%2C%20Bihar%20841101" target="_blank" rel="noopener noreferrer" class="btn btn-primary-temple">
+                                <span><i class="bi bi-geo-alt-fill me-2"></i>Get Directions</span>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-secondary">Contact for Guidance</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="temple-map-wrapper">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.609214115434!2d85.18509012539782!3d25.684245927400553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5bf8cd2c608d%3A0x7a52cada82dc3924!2sM5MQ%2BQ52%20Harihar%20nath%20mandir%2C%20Hariharnath%20-%20Pahlezaghat%20Rd%2C%20Sonepur%2C%20Bihar%20841101!5e0!3m2!1sen!2sin!4v1786645099406!5m2!1sen!2sin"
+                                allowfullscreen=""
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section-padding section-ivory">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-label section-title-center">Contact</span>
+                    <h2 class="section-title section-title-center">Get in <span class="text-gold">Touch</span></h2>
+                    <p class="lead">Connect directly with Baba Hariharnath Temple administration</p>
+                </div>
+                <div class="row g-5 mt-3">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <div class="p-4" style="background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-soft);border:1px solid var(--color-border-light);">
+                            <h4 style="font-size:1.1rem;margin-bottom:1.2rem;"><i class="bi bi-info-circle me-2 text-gold"></i>Temple Administration</h4>
+                            <address style="font-style:normal;font-size:0.95rem;color:var(--color-text-secondary);">
+                                <p><strong style="color:var(--color-temple-brown);">Baba Hariharnath Temple Trust</strong></p>
+                                <p>Sonepur, Saran District, Bihar 841101, India</p>
+                                <hr style="border-color:var(--color-border-light);" />
+                                <p><i class="bi bi-envelope me-2 text-gold"></i> <a href="mailto:info@hariharnath.in" style="color:inherit;text-decoration:none;">info@hariharnath.in</a> &nbsp;|&nbsp; <a href="mailto:booking@hariharnath.in" style="color:inherit;text-decoration:none;">booking@hariharnath.in</a></p>
+                                <p><i class="bi bi-clock me-2 text-gold"></i> Administrative Office: 9:00 AM – 6:00 PM</p>
+                                <p><i class="bi bi-shield-check me-2 text-success"></i> Connected to REST API Backend</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div style="background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-soft);border:1px solid var(--color-border-light);padding:2rem;">
+                            <h4 style="font-size:1.1rem;margin-bottom:1.2rem;"><i class="bi bi-chat-dots me-2 text-gold"></i>Send a Message (Connected to API)</h4>
+                            <form id="contactForm" onsubmit="handleContact(event)">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="contactName" class="form-label small fw-bold">Full Name</label>
+                                        <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactEmail" class="form-label small fw-bold">Email Address</label>
+                                        <input type="email" class="form-control" id="contactEmail" placeholder="Your email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactSubject" class="form-label small fw-bold">Subject</label>
+                                        <input type="text" class="form-control" id="contactSubject" placeholder="Inquiry subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactMessage" class="form-label small fw-bold">Message</label>
+                                        <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your question or message for the temple..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary-temple" id="contactSubmitBtn">
+                                            <span><i class="bi bi-send me-2"></i>Send Message</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA / BOOKING ===== -->
+        <section id="booking" class="temple-cta">
+            <div class="container text-center" data-aos="zoom-in">
+                <span class="sacred-om">ॐ</span>
+                <h2 style="color:#fff;">Plan Your Sacred Visit</h2>
+                <p style="color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto 2rem;">
+                    Submit your darshan or special puja request directly to the temple management backend.
+                </p>
+                <button class="btn btn-gold-temple" onclick="openBookingModal()" style="font-size:0.95rem;padding:0.9rem 3rem;">
+                    <span><i class="bi bi-calendar-heart me-2"></i>Plan Your Darshan</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="temple-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="fs-2 text-gold">ॐ</span>
+                        <div>
+                            <h3 class="fs-5 text-white mb-0">Baba Hariharnath</h3>
+                            <small class="text-white-50">बाबा हरिहरनाथ मंदिर · सोनपुर</small>
+                        </div>
+                    </div>
+                    <p class="small text-white-50">Official digital portal and Spring Boot backend for temple worship services, darshan bookings, festival calendars, and administration.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <button class="btn btn-sm btn-outline-warning text-gold" onclick="openAdminModal()">
+                            <i class="bi bi-shield-lock me-1"></i>Admin Dashboard Login
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Temple</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="#worship">Timings</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Worship</h4>
+                    <ul class="footer-links">
+                        <li><a href="#worship">Aarti</a></li>
+                        <li><a href="#worship">Puja Services</a></li>
+                        <li><a href="#booking" onclick="openBookingModal()">Plan Darshan</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Visit</h4>
+                    <ul class="footer-links">
+                        <li><a href="#visit">Location &amp; Map</a></li>
+                        <li><a href="#lookup">Check Status</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Administration</h4>
+                    <ul class="footer-links">
+                        <li><a href="#admin" onclick="openAdminModal()">Admin Login</a></li>
+                        <li><a href="/swagger-ui/index.html" target="_blank">Swagger OpenAPI</a></li>
+                        <li><a href="/api/v1/health" target="_blank">API Health</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color:rgba(255,255,255,0.1);margin:2.5rem 0 1.5rem;" />
+            <div class="d-flex flex-wrap justify-content-between align-items-center small text-white-50">
+                <p class="mb-0">© <span id="currentYear">2026</span> Baba Hariharnath Temple, Sonepur. All Rights Reserved.</p>
+                <p class="mb-0">Developed by <span class="text-gold fw-semibold">Rishikesh Kumar</span> &nbsp;|&nbsp; Backend: Spring Boot 3 + MySQL + JWT</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE BANNER ===== -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <p class="mb-0 small"><i class="bi bi-info-circle me-2 text-gold"></i>We use essential session tokens to support secure darshan booking and temple administration.</p>
+            <button class="btn btn-sm btn-temple-nav" onclick="acceptCookies()">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ===== BOOKING MODAL ===== -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="border-radius:var(--radius-lg);border:none;background:var(--color-warm-ivory);">
+                <div class="modal-header border-bottom px-4 py-3">
+                    <h5 class="modal-title" id="bookingModalLabel"><i class="bi bi-calendar-heart me-2 text-gold"></i>Plan Your Darshan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="bookingErrors" class="alert alert-danger" style="display:none;font-size:0.85rem;"></div>
+                    <form id="bookingForm" onsubmit="handleBooking(event)">
+                        <div class="mb-3">
+                            <label for="bookingService" class="form-label fw-bold small">Select Service / Puja</label>
+                            <select class="form-select" id="bookingService" required>
+                                <option value="">Choose a service...</option>
+                                <option value="Darshan">General Darshan</option>
+                                <option value="Nitya Abhishek">Nitya Abhishek (₹251)</option>
+                                <option value="Archana">Archana (₹101)</option>
+                                <option value="Rudrabhishek">Rudrabhishek (₹1,100)</option>
+                                <option value="Special Puja">Special Family Sankalp Puja (₹501)</option>
+                            </select>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="bookingDate" class="form-label fw-bold small">Preferred Date</label>
+                                <input type="date" class="form-control" id="bookingDate" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="bookingDevotees" class="form-label fw-bold small">Number of Devotees (1–10)</label>
+                                <input type="number" class="form-control" id="bookingDevotees" value="2" min="1" max="10" required />
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="bookingName" class="form-label fw-bold small">Devotee Full Name</label>
+                                <input type="text" class="form-control" id="bookingName" placeholder="e.g. Rishikesh Kumar" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="bookingMobile" class="form-label fw-bold small">10-Digit Mobile Number</label>
+                                <input type="tel" class="form-control" id="bookingMobile" placeholder="e.g. 9876543210" required />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingEmail" class="form-label fw-bold small">Email Address (for confirmation)</label>
+                            <input type="email" class="form-control" id="bookingEmail" placeholder="e.g. visitor@gmail.com" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingNotes" class="form-label fw-bold small">Special Requests / Gotra Details (Optional)</label>
+                            <textarea class="form-control" id="bookingNotes" rows="2" placeholder="e.g. Kashyap gotra, morning aarti darshan..."></textarea>
+                        </div>
+                        <div class="text-muted small">
+                            <i class="bi bi-shield-lock me-1"></i> Direct backend booking API: <code>POST /api/v1/bookings</code>. Confirmation email dispatched automatically.
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer px-4 py-3 border-top">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-gold-temple btn-sm" id="bookingSubmitBtn" form="bookingForm">
+                        <span><i class="bi bi-check2-circle me-1"></i>Submit Booking Request</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ADMIN DASHBOARD MODAL ===== -->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="adminModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border-radius:var(--radius-lg);border:none;background:#fdfcf9;">
+                <div class="modal-header border-bottom px-4 py-3 bg-dark text-white">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="fs-4 text-warning">ॐ</span>
+                        <div>
+                            <h5 class="modal-title mb-0" id="adminModalLabel">Temple Administration Dashboard</h5>
+                            <small class="text-white-50">Spring Security + JWT Protected (/api/v1/admin/*)</small>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+
+                    <!-- LOGIN VIEW (Shown if not authenticated) -->
+                    <div id="adminLoginSection">
+                        <div class="row justify-content-center py-4">
+                            <div class="col-md-6 col-lg-5">
+                                <div class="p-4 bg-white border rounded shadow-sm">
+                                    <div class="text-center mb-4">
+                                        <span class="fs-1 text-gold">🛕</span>
+                                        <h4 class="mt-2">Admin / Staff Login</h4>
+                                        <p class="small text-muted">Authenticate to manage bookings, Aarti schedules, and announcements.</p>
+                                    </div>
+                                    <div id="adminLoginError" class="alert alert-danger" style="display:none;font-size:0.85rem;"></div>
+                                    <form id="adminLoginForm" onsubmit="handleAdminLogin(event)">
+                                        <div class="mb-3">
+                                            <label class="form-label small fw-bold" for="adminEmail">Authorized Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-light"><i class="bi bi-person-lock text-muted"></i></span>
+                                                <input type="email" class="form-control" id="adminEmail" placeholder="Enter your registered email" autocomplete="username" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label small fw-bold" for="adminPassword">Password</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-light"><i class="bi bi-key text-muted"></i></span>
+                                                <input type="password" class="form-control" id="adminPassword" placeholder="Enter your secure password" autocomplete="current-password" required>
+                                                <button class="btn btn-outline-secondary" type="button" id="togglePasswordBtn" onclick="toggleAdminPasswordVisibility()" title="Show/Hide Password">
+                                                    <i class="bi bi-eye" id="togglePasswordIcon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 p-2 mb-3 rounded bg-light border text-muted small">
+                                            <i class="bi bi-shield-lock-fill text-gold fs-5"></i>
+                                            <span>Restricted Portal: Access reserved strictly for temple administrators. Credentials are never displayed publicly.</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-gold-temple w-100 justify-content-center" id="adminLoginBtn">
+                                            <span><i class="bi bi-box-arrow-in-right me-2"></i>Sign In Privately</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DASHBOARD VIEW (Shown once authenticated) -->
+                    <div id="adminDashboardSection" style="display:none;">
+                        <!-- Top Nav inside Admin -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-between pb-3 mb-3 border-bottom gap-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-success">Authenticated</span>
+                                <span class="fw-bold" id="adminUserName">Admin</span>
+                                <span class="text-muted small">(<span id="adminUserEmail">admin@hariharnath.in</span>)</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-secondary btn-sm" onclick="fetchDashboardStats(); fetchAdminBookings();" title="Refresh dashboard data">
+                                    <i class="bi bi-arrow-clockwise me-1"></i>Refresh
+                                </button>
+                                <button class="btn btn-outline-warning btn-sm" onclick="openAdminPasswordModal()" title="Change your secret password">
+                                    <i class="bi bi-key-fill me-1"></i>Change Password
+                                </button>
+                                <button class="btn btn-outline-danger btn-sm" onclick="handleAdminLogout()" title="Log out from dashboard">
+                                    <i class="bi bi-box-arrow-right me-1"></i>Logout
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 8 STAT CARDS -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card">
+                                    <div class="stat-val" id="statTotalBookings">-</div>
+                                    <div class="stat-lbl">Total Bookings</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card border-warning">
+                                    <div class="stat-val text-warning" id="statPendingBookings">-</div>
+                                    <div class="stat-lbl">Pending Bookings</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card border-success">
+                                    <div class="stat-val text-success" id="statConfirmedBookings">-</div>
+                                    <div class="stat-lbl">Confirmed Bookings</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card border-danger">
+                                    <div class="stat-val text-danger" id="statCancelledBookings">-</div>
+                                    <div class="stat-lbl">Cancelled Bookings</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card border-primary">
+                                    <div class="stat-val text-primary" id="statTodayBookings">-</div>
+                                    <div class="stat-lbl">Today's Bookings</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card">
+                                    <div class="stat-val" id="statTotalMessages">-</div>
+                                    <div class="stat-lbl">Contact Inquiries</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card border-warning">
+                                    <div class="stat-val text-warning" id="statUnreadMessages">-</div>
+                                    <div class="stat-lbl">Unread Messages</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-card">
+                                    <div class="stat-val" id="statActiveServices">-</div>
+                                    <div class="stat-lbl">Active Services</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TABS -->
+                        <ul class="nav nav-pills mb-3" id="adminTabs" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active btn-sm" data-bs-toggle="pill" data-bs-target="#tabBookings">
+                                    <i class="bi bi-calendar-check me-1"></i>Bookings
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn-sm" data-bs-toggle="pill" data-bs-target="#tabMessages" onclick="fetchAdminMessages()">
+                                    <i class="bi bi-chat-left-text me-1"></i>Inquiries
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn-sm" data-bs-toggle="pill" data-bs-target="#tabAnnouncements" onclick="fetchAdminAnnouncements()">
+                                    <i class="bi bi-megaphone me-1"></i>Announcements
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn-sm" data-bs-toggle="pill" data-bs-target="#tabAarti" onclick="fetchAdminAarti()">
+                                    <i class="bi bi-clock me-1"></i>Aarti Timings
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn-sm" data-bs-toggle="pill" data-bs-target="#tabUsers" onclick="fetchAdminUsers()">
+                                    <i class="bi bi-people me-1"></i>Staff Users
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content border rounded p-3 bg-white">
+                            <!-- TAB: BOOKINGS -->
+                            <div class="tab-pane fade show active" id="tabBookings">
+                                <div class="row g-2 mb-3 align-items-center">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control form-control-sm" id="adminBookingSearch" placeholder="Search by name, request ID, mobile..." oninput="filterAdminBookings()">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-select form-select-sm" id="adminBookingStatusFilter" onchange="filterAdminBookings()">
+                                            <option value="">All Statuses</option>
+                                            <option value="PENDING">PENDING</option>
+                                            <option value="CONFIRMED">CONFIRMED</option>
+                                            <option value="COMPLETED">COMPLETED</option>
+                                            <option value="CANCELLED">CANCELLED</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle small mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Request ID</th>
+                                                <th>Devotee Name</th>
+                                                <th>Service</th>
+                                                <th>Date</th>
+                                                <th>Devotees</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adminBookingsTableBody">
+                                            <tr><td colspan="7" class="text-center py-3 text-muted">Loading bookings...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- TAB: MESSAGES -->
+                            <div class="tab-pane fade" id="tabMessages">
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle small mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Subject</th>
+                                                <th>Message</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adminMessagesTableBody">
+                                            <tr><td colspan="7" class="text-center py-3 text-muted">Loading inquiries...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- TAB: ANNOUNCEMENTS -->
+                            <div class="tab-pane fade" id="tabAnnouncements">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="mb-0">Manage Rotating Announcements</h6>
+                                    <button class="btn btn-sm btn-primary-temple" onclick="openAddAnnouncementModal()">
+                                        <i class="bi bi-plus-lg me-1"></i>Add Announcement
+                                    </button>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle small mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Message</th>
+                                                <th>Order</th>
+                                                <th>Active</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adminAnnouncementsTableBody">
+                                            <tr><td colspan="5" class="text-center py-3 text-muted">Loading announcements...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- TAB: AARTI -->
+                            <div class="tab-pane fade" id="tabAarti">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="mb-0">Manage Aarti &amp; Ritual Timetable</h6>
+                                    <button class="btn btn-sm btn-primary-temple" onclick="openAddAartiModal()">
+                                        <i class="bi bi-plus-lg me-1"></i>Add Aarti Timing
+                                    </button>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle small mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Timing</th>
+                                                <th>Description</th>
+                                                <th>Order</th>
+                                                <th>Active</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adminAartiTableBody">
+                                            <tr><td colspan="6" class="text-center py-3 text-muted">Loading Aarti timetable...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- TAB: USERS -->
+                            <div class="tab-pane fade" id="tabUsers">
+                                <h6 class="mb-3">Temple Administration Users &amp; Staff</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle small mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Role</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adminUsersTableBody">
+                                            <tr><td colspan="5" class="text-center py-3 text-muted">Loading users...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ADMIN CHANGE PASSWORD MODAL ===== -->
+    <div class="modal fade" id="adminPasswordModal" tabindex="-1" aria-labelledby="adminPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius:var(--radius-lg);border:none;background:#fdfcf9;">
+                <div class="modal-header border-bottom px-4 py-3 bg-dark text-white">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-shield-lock-fill text-gold fs-5"></i>
+                        <h5 class="modal-title mb-0" id="adminPasswordModalLabel">Change Secret Admin Password</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted small mb-3">
+                        Set a new confidential password known only to you. Once changed, all future logins will require this new password.
+                    </p>
+                    <div id="changePasswordAlert" class="alert alert-danger" style="display:none;font-size:0.85rem;"></div>
+                    <form id="changePasswordForm" onsubmit="handleChangePassword(event)">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" for="currAdminPassword">Current Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-key text-muted"></i></span>
+                                <input type="password" class="form-control" id="currAdminPassword" placeholder="Enter current password" autocomplete="current-password" required>
+                                <button class="btn btn-outline-secondary" type="button" onclick="toggleInputVisibility('currAdminPassword', this)" title="Show/Hide">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" for="newAdminPassword">New Secret Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-shield-lock text-muted"></i></span>
+                                <input type="password" class="form-control" id="newAdminPassword" placeholder="Minimum 6 characters" minlength="6" autocomplete="new-password" required>
+                                <button class="btn btn-outline-secondary" type="button" onclick="toggleInputVisibility('newAdminPassword', this)" title="Show/Hide">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                            <div class="form-text small">Only you will have access to this password.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" for="confirmAdminPassword">Confirm New Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-check2-circle text-muted"></i></span>
+                                <input type="password" class="form-control" id="confirmAdminPassword" placeholder="Re-enter new password" minlength="6" autocomplete="new-password" required>
+                                <button class="btn btn-outline-secondary" type="button" onclick="toggleInputVisibility('confirmAdminPassword', this)" title="Show/Hide">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-gold-temple w-100 justify-content-center" id="changePasswordSubmitBtn">
+                            <span><i class="bi bi-check2-circle me-1"></i>Save New Password</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        // ==============================================================================
+        // BABA HARIHARNATH TEMPLE - COMPLETE FRONTEND & API INTEGRATION MODULE
+        // ==============================================================================
+        (function() {
+            'use strict';
+
+            const CONFIG = {
+                templeName: 'Baba Hariharnath Temple',
+                location: 'Sonepur, Saran, Bihar',
+                coordinates: [25.7039, 84.8572],
+                apiBase: '/api/v1',
+                bookingEmail: 'booking@hariharnath.in',
+                infoEmail: 'info@hariharnath.in'
+            };
+
+            let adminToken = sessionStorage.getItem('bht_jwt_token') || '';
+            let adminUser = JSON.parse(sessionStorage.getItem('bht_jwt_user') || 'null');
+
+            // --- PAGE LOADER & INIT ---
+            window.addEventListener('load', function() {
+                const loader = document.getElementById('pageLoader');
+                if (loader) {
+                    setTimeout(() => loader.classList.add('hidden'), 400);
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+                // Setup preferred tomorrow date in booking modal
+                const dateInput = document.getElementById('bookingDate');
+                if (dateInput) {
+                    const tomorrow = new Date();
+                    tomorrow.setDate(tomorrow.getDate() + 1);
+                    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+                    dateInput.value = tomorrowStr;
+                    dateInput.min = tomorrowStr;
+                }
+
+                // Initialize AOS
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({ duration: 800, once: true });
+                }
+
+                // Scroll Navbar & Scroll-to-top
+                const navbar = document.getElementById('mainNavbar');
+                const scrollTopBtn = document.getElementById('scrollTopBtn');
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 80) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+
+                    if (window.pageYOffset > 400) {
+                        scrollTopBtn.classList.add('visible');
+                    } else {
+                        scrollTopBtn.classList.remove('visible');
+                    }
+                });
+
+                if (scrollTopBtn) {
+                    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+                }
+
+                // Cookie Banner
+                if (!localStorage.getItem('bht_cookies_accepted')) {
+                    setTimeout(() => {
+                        const banner = document.getElementById('cookieBanner');
+                        if (banner) banner.classList.add('show');
+                    }, 2500);
+                }
+
+                // Initialize Automatic Hero Slider (5-second transition interval)
+                initHeroSlider();
+
+                // Fetch dynamic data from database
+                loadLiveAnnouncements();
+                loadLiveAarti();
+                loadLiveServices();
+            });
+
+            // --- AUTOMATIC HERO IMAGE SLIDER (5-Second Smooth Interval) ---
+            function initHeroSlider() {
+                const slider = document.getElementById('heroSlider');
+                if (!slider) return;
+
+                const slides = slider.querySelectorAll('.hero-slide');
+                const prevBtn = document.getElementById('heroSliderPrev');
+                const nextBtn = document.getElementById('heroSliderNext');
+                const dotsContainer = document.getElementById('heroSliderDots');
+                const captionEl = document.getElementById('heroSlideCaption');
+
+                if (!slides.length) return;
+
+                let currentIndex = 0;
+                let sliderTimer = null;
+                const SLIDE_INTERVAL = 5000; // exactly 5 seconds
+
+                // Generate Indicator Dots
+                if (dotsContainer) {
+                    dotsContainer.innerHTML = '';
+                    slides.forEach((slide, idx) => {
+                        const dot = document.createElement('button');
+                        dot.type = 'button';
+                        dot.className = `hero-slider-dot ${idx === 0 ? 'active' : ''}`;
+                        dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+                        dot.addEventListener('click', () => {
+                            goToSlide(idx);
+                            restartTimer();
+                        });
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+
+                function updateSlideDisplay(index) {
+                    slides.forEach((slide, idx) => {
+                        if (idx === index) {
+                            slide.classList.add('active');
+                        } else {
+                            slide.classList.remove('active');
+                        }
+                    });
+
+                    // Update Dots
+                    if (dotsContainer) {
+                        const dots = dotsContainer.querySelectorAll('.hero-slider-dot');
+                        dots.forEach((dot, idx) => {
+                            if (idx === index) {
+                                dot.classList.add('active');
+                            } else {
+                                dot.classList.remove('active');
+                            }
+                        });
+                    }
+
+                    // Update Caption
+                    if (captionEl && slides[index]) {
+                        const caption = slides[index].getAttribute('data-caption') || 'Baba Hariharnath Temple';
+                        captionEl.textContent = `✦ ${caption} ✦`;
+                    }
+                }
+
+                function goToSlide(index) {
+                    currentIndex = (index + slides.length) % slides.length;
+                    updateSlideDisplay(currentIndex);
+                }
+
+                function nextSlide() {
+                    goToSlide(currentIndex + 1);
+                }
+
+                function prevSlide() {
+                    goToSlide(currentIndex - 1);
+                }
+
+                function startTimer() {
+                    stopTimer();
+                    sliderTimer = setInterval(nextSlide, SLIDE_INTERVAL);
+                }
+
+                function stopTimer() {
+                    if (sliderTimer) {
+                        clearInterval(sliderTimer);
+                        sliderTimer = null;
+                    }
+                }
+
+                function restartTimer() {
+                    startTimer();
+                }
+
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        nextSlide();
+                        restartTimer();
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        prevSlide();
+                        restartTimer();
+                    });
+                }
+
+                // Pause on hover for enhanced viewing, resume on mouse leave
+                const heroSection = document.getElementById('home');
+                if (heroSection) {
+                    heroSection.addEventListener('mouseenter', stopTimer);
+                    heroSection.addEventListener('mouseleave', startTimer);
+                }
+
+                // Mobile touch swipe gestures
+                let touchStartX = 0;
+                let touchEndX = 0;
+                slider.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    stopTimer();
+                }, { passive: true });
+
+                slider.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const diff = touchStartX - touchEndX;
+                    if (Math.abs(diff) > 40) {
+                        if (diff > 0) {
+                            nextSlide();
+                        } else {
+                            prevSlide();
+                        }
+                    }
+                    startTimer();
+                }, { passive: true });
+
+                // Keyboard left/right navigation when hero or controls are focused
+                window.addEventListener('keydown', (e) => {
+                    if (document.activeElement && ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
+                    if (e.key === 'ArrowLeft') {
+                        prevSlide();
+                        restartTimer();
+                    } else if (e.key === 'ArrowRight') {
+                        nextSlide();
+                        restartTimer();
+                    }
+                });
+
+                // Initial setup
+                updateSlideDisplay(0);
+                startTimer();
+            }
+
+            window.acceptCookies = function() {
+                localStorage.setItem('bht_cookies_accepted', 'true');
+                const banner = document.getElementById('cookieBanner');
+                if (banner) banner.classList.remove('show');
+            };
+
+            // Mobile Drawer
+            const toggle = document.getElementById('mobileNavToggle');
+            const drawer = document.getElementById('mobileDrawer');
+            const overlay = document.getElementById('drawerOverlay');
+            const closeBtn = document.getElementById('drawerClose');
+
+            function openDrawer() {
+                if (drawer) drawer.classList.add('open');
+                if (overlay) overlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            window.closeDrawer = function() {
+                if (drawer) drawer.classList.remove('open');
+                if (overlay) overlay.classList.remove('open');
+                document.body.style.overflow = '';
+            };
+            if (toggle) toggle.addEventListener('click', openDrawer);
+            if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+            if (overlay) overlay.addEventListener('click', closeDrawer);
+
+            // ==============================================================================
+            // 1. DYNAMIC DATA FETCHING (Announcements, Aarti, Services)
+            // ==============================================================================
+
+            async function loadLiveAnnouncements() {
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/announcements`);
+                    if (res.ok) {
+                        const list = await res.json();
+                        if (list && list.length > 0) {
+                            const textEl = document.getElementById('announcementText');
+                            let idx = 0;
+                            textEl.textContent = list[0].message;
+                            if (list.length > 1) {
+                                setInterval(() => {
+                                    idx = (idx + 1) % list.length;
+                                    textEl.textContent = list[idx].message;
+                                }, 7000);
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Using default announcement banner", e);
+                }
+            }
+
+            async function loadLiveAarti() {
+                const container = document.getElementById('aartiContainer');
+                if (!container) return;
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/aarti`);
+                    if (res.ok) {
+                        const list = await res.json();
+                        if (list && list.length > 0) {
+                            container.innerHTML = list.map(item => `
+                                <div class="aarti-item">
+                                    <span class="aarti-time">${escapeHtml(item.time)}</span>
+                                    <span class="aarti-name">${escapeHtml(item.name)}</span>
+                                    <span class="aarti-desc">${escapeHtml(item.description || '')}</span>
+                                </div>
+                            `).join('');
+                            return;
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Could not fetch live aarti timetable", e);
+                }
+            }
+
+            async function loadLiveServices() {
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/services`);
+                    if (res.ok) {
+                        const list = await res.json();
+                        if (list && list.length > 0) {
+                            const select = document.getElementById('bookingService');
+                            if (select) {
+                                select.innerHTML = '<option value="">Choose a service...</option>' +
+                                    list.map(s => `<option value="${escapeHtml(s.name)}">${escapeHtml(s.name)} (₹${s.price})</option>`).join('');
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Could not fetch live services list", e);
+                }
+            }
+
+            // ==============================================================================
+            // 2. DARSHAN BOOKING FORM INTEGRATION (POST /api/v1/bookings)
+            // ==============================================================================
+
+            window.openBookingModal = function() {
+                const modalEl = document.getElementById('bookingModal');
+                if (modalEl) {
+                    const modal = new bootstrap.Modal(modalEl);
+                    modal.show();
+                }
+            };
+
+            window.handleBooking = async function(e) {
+                e.preventDefault();
+
+                const errBox = document.getElementById('bookingErrors');
+                const submitBtn = document.getElementById('bookingSubmitBtn');
+                errBox.style.display = 'none';
+                errBox.innerHTML = '';
+
+                const service = document.getElementById('bookingService').value.trim();
+                const bookingDate = document.getElementById('bookingDate').value;
+                const name = document.getElementById('bookingName').value.trim();
+                const mobile = document.getElementById('bookingMobile').value.trim();
+                const email = document.getElementById('bookingEmail').value.trim();
+                const devotees = parseInt(document.getElementById('bookingDevotees').value, 10);
+                const notes = document.getElementById('bookingNotes').value.trim();
+
+                // Frontend pre-validation
+                if (!service || !bookingDate || !name || !mobile || !email || !devotees) {
+                    errBox.style.display = 'block';
+                    errBox.textContent = 'Please fill in all mandatory booking fields.';
+                    return;
+                }
+
+                // Show loading state
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Processing request...';
+
+                try {
+                    const response = await fetch(`${CONFIG.apiBase}/bookings`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            service,
+                            bookingDate,
+                            name,
+                            mobile,
+                            email,
+                            devotees,
+                            notes
+                        })
+                    });
+
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        // Handle validation errors from backend
+                        if (data.errors) {
+                            const errMsgs = Object.values(data.errors).join('<br>');
+                            errBox.innerHTML = `<strong>Validation Error:</strong><br>${errMsgs}`;
+                        } else {
+                            errBox.textContent = data.message || 'Server error while submitting booking.';
+                        }
+                        errBox.style.display = 'block';
+                        return;
+                    }
+
+                    // Success handling: Close modal & SweetAlert2
+                    const modalEl = document.getElementById('bookingModal');
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    if (modalInstance) modalInstance.hide();
+
+                    Swal.fire({
+                        title: '🪔 Darshan Request Received!',
+                        html: `
+                            <div style="text-align:left;font-size:0.95rem;padding:0.5rem 0;">
+                                <p style="color:var(--color-temple-brown);font-weight:600;margin-bottom:0.4rem;">Jai Baba Hariharnath!</p>
+                                <p>Your request for <strong>${escapeHtml(data.service)}</strong> on <strong>${escapeHtml(data.bookingDate)}</strong> has been recorded.</p>
+                                <div style="background:#f7f2ea;border:1px solid #e0d0ba;padding:0.75rem 1rem;border-radius:8px;margin:1rem 0;">
+                                    <div style="font-size:0.8rem;text-transform:uppercase;color:#8a7a72;">Your Permanent Request ID</div>
+                                    <div style="font-size:1.4rem;font-weight:700;color:#2A1710;font-family:monospace;letter-spacing:1px;">${escapeHtml(data.requestId)}</div>
+                                </div>
+                                <p class="text-muted small mb-0">A confirmation has been dispatched to <strong>${escapeHtml(data.email)}</strong>. You can check your booking status anytime using your Request ID.</p>
+                            </div>
+                        `,
+                        icon: 'success',
+                        confirmButtonColor: '#C9974A',
+                        confirmButtonText: 'ॐ नमः शिवाय'
+                    });
+
+                    document.getElementById('bookingForm').reset();
+
+                } catch (err) {
+                    console.error("Booking error:", err);
+                    errBox.style.display = 'block';
+                    errBox.textContent = 'Unable to reach backend server. Please verify your connection and try again.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                }
+            };
+
+            // ==============================================================================
+            // 3. BOOKING LOOKUP (GET /api/v1/bookings/:requestId)
+            // ==============================================================================
+
+            window.handleLookupBooking = async function(e) {
+                e.preventDefault();
+                const input = document.getElementById('lookupRequestId');
+                const btn = document.getElementById('lookupBtn');
+                const resultBox = document.getElementById('lookupResult');
+                const id = input.value.trim();
+
+                if (!id) return;
+
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Checking...';
+                resultBox.style.display = 'none';
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/bookings/${encodeURIComponent(id)}`);
+                    const data = await res.json();
+
+                    resultBox.style.display = 'block';
+
+                    if (!res.ok) {
+                        resultBox.innerHTML = `
+                            <div class="alert alert-warning mb-0">
+                                <i class="bi bi-exclamation-circle me-2"></i>${escapeHtml(data.message || 'No booking found matching this Request ID.')}
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    const statusClass = `badge-status-${data.status}`;
+                    resultBox.innerHTML = `
+                        <div class="p-3 border rounded bg-light">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-bold fs-5">${escapeHtml(data.requestId)}</span>
+                                <span class="badge ${statusClass} px-3 py-2 text-uppercase">${escapeHtml(data.status)}</span>
+                            </div>
+                            <div class="row g-2 small text-secondary">
+                                <div class="col-sm-6"><strong>Devotee:</strong> ${escapeHtml(data.name)}</div>
+                                <div class="col-sm-6"><strong>Service:</strong> ${escapeHtml(data.service)}</div>
+                                <div class="col-sm-6"><strong>Scheduled Date:</strong> ${escapeHtml(data.bookingDate)}</div>
+                                <div class="col-sm-6"><strong>Devotees:</strong> ${escapeHtml(data.devotees)}</div>
+                                ${data.notes ? `<div class="col-12"><strong>Notes:</strong> ${escapeHtml(data.notes)}</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                } catch (err) {
+                    resultBox.style.display = 'block';
+                    resultBox.innerHTML = `<div class="alert alert-danger mb-0">Error communicating with server. Please try again.</div>`;
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="bi bi-search me-2"></i><span>Check Status</span>';
+                }
+            };
+
+            // ==============================================================================
+            // 4. CONTACT FORM INTEGRATION (POST /api/v1/contact)
+            // ==============================================================================
+
+            window.handleContact = async function(e) {
+                e.preventDefault();
+                const submitBtn = document.getElementById('contactSubmitBtn');
+
+                const name = document.getElementById('contactName').value.trim();
+                const email = document.getElementById('contactEmail').value.trim();
+                const subject = document.getElementById('contactSubject').value.trim();
+                const message = document.getElementById('contactMessage').value.trim();
+
+                if (!name || !email || !subject || !message) {
+                    Swal.fire({
+                        title: 'Required Fields',
+                        text: 'Please fill in all fields before sending.',
+                        icon: 'warning',
+                        confirmButtonColor: '#C9974A'
+                    });
+                    return false;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/contact`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, subject, message })
+                    });
+
+                    const data = await res.json();
+
+                    if (!res.ok) {
+                        Swal.fire({
+                            title: 'Submission Failed',
+                            text: data.message || 'Could not send your message.',
+                            icon: 'error',
+                            confirmButtonColor: '#C9974A'
+                        });
+                        return false;
+                    }
+
+                    Swal.fire({
+                        title: '✨ Message Sent Successfully',
+                        text: 'Thank you for reaching out. Baba Hariharnath Temple administration will respond shortly.',
+                        icon: 'success',
+                        confirmButtonColor: '#C9974A',
+                        confirmButtonText: 'Jai Baba Hariharnath'
+                    });
+
+                    document.getElementById('contactForm').reset();
+                } catch (err) {
+                    Swal.fire({
+                        title: 'Network Error',
+                        text: 'Unable to connect to the server. Please try again later.',
+                        icon: 'error',
+                        confirmButtonColor: '#C9974A'
+                    });
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span><i class="bi bi-send me-2"></i>Send Message</span>';
+                }
+
+                return false;
+            };
+
+            // ==============================================================================
+            // 5. ADMIN DASHBOARD & SECURITY INTEGRATION
+            // ==============================================================================
+
+            window.openAdminModal = function() {
+                const modalEl = document.getElementById('adminModal');
+                if (modalEl) {
+                    const modal = new bootstrap.Modal(modalEl);
+                    modal.show();
+                    checkAdminAuth();
+                }
+            };
+
+            function checkAdminAuth() {
+                const loginSection = document.getElementById('adminLoginSection');
+                const dashboardSection = document.getElementById('adminDashboardSection');
+
+                if (adminToken && adminUser) {
+                    loginSection.style.display = 'none';
+                    dashboardSection.style.display = 'block';
+                    document.getElementById('adminUserName').textContent = adminUser.name || 'Admin';
+                    document.getElementById('adminUserEmail').textContent = adminUser.email || '';
+                    fetchDashboardStats();
+                    fetchAdminBookings();
+                } else {
+                    loginSection.style.display = 'block';
+                    dashboardSection.style.display = 'none';
+                }
+            }
+
+            window.handleAdminLogin = async function(e) {
+                e.preventDefault();
+                const errBox = document.getElementById('adminLoginError');
+                const btn = document.getElementById('adminLoginBtn');
+                errBox.style.display = 'none';
+
+                const email = document.getElementById('adminEmail').value.trim();
+                const password = document.getElementById('adminPassword').value;
+
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Authenticating...';
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/auth/login`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const data = await res.json();
+
+                    if (!res.ok) {
+                        errBox.textContent = data.message || 'Login failed. Invalid credentials.';
+                        errBox.style.display = 'block';
+                        return;
+                    }
+
+                    adminToken = data.token;
+                    adminUser = data.user;
+                    sessionStorage.setItem('bht_jwt_token', adminToken);
+                    sessionStorage.setItem('bht_jwt_user', JSON.stringify(adminUser));
+
+                    document.getElementById('adminPassword').value = '';
+                    checkAdminAuth();
+
+                } catch (err) {
+                    errBox.textContent = 'Network error connecting to backend auth endpoint.';
+                    errBox.style.display = 'block';
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = '<span><i class="bi bi-box-arrow-in-right me-2"></i>Sign In Privately</span>';
+                }
+            };
+
+            window.toggleAdminPasswordVisibility = function() {
+                const passInput = document.getElementById('adminPassword');
+                const icon = document.getElementById('togglePasswordIcon');
+                if (passInput) {
+                    if (passInput.type === 'password') {
+                        passInput.type = 'text';
+                        if (icon) icon.className = 'bi bi-eye-slash';
+                    } else {
+                        passInput.type = 'password';
+                        if (icon) icon.className = 'bi bi-eye';
+                    }
+                }
+            };
+
+            window.toggleInputVisibility = function(targetInputId, btnEl) {
+                const targetInput = document.getElementById(targetInputId);
+                if (targetInput) {
+                    const icon = btnEl.querySelector('i');
+                    if (targetInput.type === 'password') {
+                        targetInput.type = 'text';
+                        if (icon) icon.className = 'bi bi-eye-slash';
+                    } else {
+                        targetInput.type = 'password';
+                        if (icon) icon.className = 'bi bi-eye';
+                    }
+                }
+            };
+
+            window.openAdminPasswordModal = function() {
+                const modalEl = document.getElementById('adminPasswordModal');
+                if (modalEl) {
+                    document.getElementById('changePasswordForm').reset();
+                    document.getElementById('changePasswordAlert').style.display = 'none';
+                    const modal = new bootstrap.Modal(modalEl);
+                    modal.show();
+                }
+            };
+
+            window.handleChangePassword = async function(e) {
+                e.preventDefault();
+                const errBox = document.getElementById('changePasswordAlert');
+                const btn = document.getElementById('changePasswordSubmitBtn');
+                errBox.style.display = 'none';
+
+                const currentPassword = document.getElementById('currAdminPassword').value;
+                const newPassword = document.getElementById('newAdminPassword').value;
+                const confirmPassword = document.getElementById('confirmAdminPassword').value;
+
+                if (newPassword !== confirmPassword) {
+                    errBox.textContent = 'New passwords do not match. Please verify.';
+                    errBox.style.display = 'block';
+                    return;
+                }
+
+                if (newPassword.length < 6) {
+                    errBox.textContent = 'New password must be at least 6 characters long.';
+                    errBox.style.display = 'block';
+                    return;
+                }
+
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Updating...';
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/change-password`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${adminToken}`
+                        },
+                        body: JSON.stringify({ currentPassword, newPassword })
+                    });
+
+                    const data = await res.json();
+
+                    if (!res.ok) {
+                        errBox.textContent = data.message || 'Failed to update password. Please check your current password.';
+                        errBox.style.display = 'block';
+                        return;
+                    }
+
+                    // Success
+                    const modalEl = document.getElementById('adminPasswordModal');
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    if (modalInstance) modalInstance.hide();
+
+                    Swal.fire({
+                        title: '🔒 Password Updated',
+                        text: 'Your new secret password has been saved. Only you can now access the admin portal.',
+                        icon: 'success',
+                        confirmButtonColor: '#C9974A'
+                    });
+
+                } catch (err) {
+                    console.error("Change password error:", err);
+                    errBox.textContent = 'Server communication error while changing password.';
+                    errBox.style.display = 'block';
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = '<span><i class="bi bi-check2-circle me-1"></i>Save New Password</span>';
+                }
+            };
+
+            window.handleAdminLogout = function() {
+                adminToken = '';
+                adminUser = null;
+                sessionStorage.removeItem('bht_jwt_token');
+                sessionStorage.removeItem('bht_jwt_user');
+                checkAdminAuth();
+            };
+
+            window.fetchDashboardStats = async function() {
+                if (!adminToken) return;
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/dashboard/stats`, {
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        const stats = await res.json();
+                        document.getElementById('statTotalBookings').textContent = stats.totalBookings ?? 0;
+                        document.getElementById('statPendingBookings').textContent = stats.pendingBookings ?? 0;
+                        document.getElementById('statConfirmedBookings').textContent = stats.confirmedBookings ?? 0;
+                        document.getElementById('statCancelledBookings').textContent = stats.cancelledBookings ?? 0;
+                        document.getElementById('statTodayBookings').textContent = stats.todayBookings ?? 0;
+                        document.getElementById('statTotalMessages').textContent = stats.totalContactMessages ?? 0;
+                        document.getElementById('statUnreadMessages').textContent = stats.unreadContactMessages ?? 0;
+                        document.getElementById('statActiveServices').textContent = stats.activeServices ?? 0;
+                    } else if (res.status === 401) {
+                        handleAdminLogout();
+                    }
+                } catch (e) {
+                    console.error("Failed to load dashboard stats", e);
+                }
+            };
+
+            let currentAdminBookings = [];
+
+            window.fetchAdminBookings = async function() {
+                if (!adminToken) return;
+                const tbody = document.getElementById('adminBookingsTableBody');
+                tbody.innerHTML = '<tr><td colspan="7" class="text-center py-3"><div class="spinner-border spinner-border-sm text-gold me-2"></div>Loading bookings...</td></tr>';
+
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/bookings?size=100`, {
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        const data = await res.json();
+                        currentAdminBookings = data.content || [];
+                        renderAdminBookings(currentAdminBookings);
+                    }
+                } catch (e) {
+                    tbody.innerHTML = '<tr><td colspan="7" class="text-center text-danger py-3">Error loading bookings</td></tr>';
+                }
+            };
+
+            function renderAdminBookings(list) {
+                const tbody = document.getElementById('adminBookingsTableBody');
+                if (!list || list.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-3">No bookings found</td></tr>';
+                    return;
+                }
+
+                tbody.innerHTML = list.map(b => `
+                    <tr>
+                        <td><code>${escapeHtml(b.requestId)}</code></td>
+                        <td>
+                            <strong>${escapeHtml(b.name)}</strong><br>
+                            <span class="text-muted small">${escapeHtml(b.mobile)} | ${escapeHtml(b.email)}</span>
+                        </td>
+                        <td>${escapeHtml(b.service)}</td>
+                        <td>${escapeHtml(b.bookingDate)}</td>
+                        <td>${escapeHtml(b.devotees)}</td>
+                        <td><span class="badge badge-status-${b.status}">${escapeHtml(b.status)}</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle py-0" data-bs-toggle="dropdown">Action</button>
+                                <ul class="dropdown-menu dropdown-menu-end small">
+                                    <li><button class="dropdown-item text-success" onclick="updateBookingStatus(${b.id}, 'CONFIRMED')"><i class="bi bi-check-circle me-1"></i>Confirm</button></li>
+                                    <li><button class="dropdown-item text-primary" onclick="updateBookingStatus(${b.id}, 'COMPLETED')"><i class="bi bi-check2-all me-1"></i>Mark Completed</button></li>
+                                    <li><button class="dropdown-item text-warning" onclick="updateBookingStatus(${b.id}, 'PENDING')"><i class="bi bi-clock me-1"></i>Set Pending</button></li>
+                                    <li><button class="dropdown-item text-danger" onclick="updateBookingStatus(${b.id}, 'CANCELLED')"><i class="bi bi-x-circle me-1"></i>Cancel</button></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><button class="dropdown-item text-danger" onclick="deleteBooking(${b.id})"><i class="bi bi-trash me-1"></i>Delete</button></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+
+            window.filterAdminBookings = function() {
+                const search = (document.getElementById('adminBookingSearch').value || '').toLowerCase();
+                const status = document.getElementById('adminBookingStatusFilter').value;
+
+                let filtered = currentAdminBookings;
+                if (status) filtered = filtered.filter(b => b.status === status);
+                if (search) {
+                    filtered = filtered.filter(b =>
+                        b.name.toLowerCase().includes(search) ||
+                        b.requestId.toLowerCase().includes(search) ||
+                        b.mobile.includes(search) ||
+                        b.email.toLowerCase().includes(search)
+                    );
+                }
+                renderAdminBookings(filtered);
+            };
+
+            window.updateBookingStatus = async function(id, status) {
+                if (!adminToken) return;
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/bookings/${id}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${adminToken}`
+                        },
+                        body: JSON.stringify({ status })
+                    });
+                    if (res.ok) {
+                        fetchDashboardStats();
+                        fetchAdminBookings();
+                        Swal.fire({ toast: true, position: 'top-end', icon: 'success', title: `Status updated to ${status}`, showConfirmButton: false, timer: 2000 });
+                    }
+                } catch (e) {
+                    Swal.fire('Error', 'Could not update booking status', 'error');
+                }
+            };
+
+            window.deleteBooking = async function(id) {
+                if (!confirm("Are you sure you want to delete this booking record?")) return;
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/bookings/${id}`, {
+                        method: 'DELETE',
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        fetchDashboardStats();
+                        fetchAdminBookings();
+                    }
+                } catch (e) {
+                    Swal.fire('Error', 'Failed to delete booking', 'error');
+                }
+            };
+
+            // Messages tab
+            window.fetchAdminMessages = async function() {
+                if (!adminToken) return;
+                const tbody = document.getElementById('adminMessagesTableBody');
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/contact`, {
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        const data = await res.json();
+                        const list = data.content || [];
+                        if (list.length === 0) {
+                            tbody.innerHTML = '<tr><td colspan="7" class="text-center py-3 text-muted">No messages</td></tr>';
+                            return;
+                        }
+                        tbody.innerHTML = list.map(m => `
+                            <tr>
+                                <td>${new Date(m.createdAt).toLocaleDateString()}</td>
+                                <td>${escapeHtml(m.name)}</td>
+                                <td>${escapeHtml(m.email)}</td>
+                                <td>${escapeHtml(m.subject)}</td>
+                                <td style="max-width:250px;">${escapeHtml(m.message)}</td>
+                                <td><span class="badge bg-secondary">${escapeHtml(m.status)}</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-success py-0" onclick="updateMessageStatus(${m.id}, 'READ')">Mark Read</button>
+                                </td>
+                            </tr>
+                        `).join('');
+                    }
+                } catch (e) {
+                    tbody.innerHTML = '<tr><td colspan="7" class="text-center text-danger py-3">Error</td></tr>';
+                }
+            };
+
+            window.updateMessageStatus = async function(id, status) {
+                try {
+                    await fetch(`${CONFIG.apiBase}/admin/contact/${id}/status?status=${status}`, {
+                        method: 'PUT',
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    fetchAdminMessages();
+                    fetchDashboardStats();
+                } catch (e) {}
+            };
+
+            // Announcements Tab
+            window.fetchAdminAnnouncements = async function() {
+                if (!adminToken) return;
+                const tbody = document.getElementById('adminAnnouncementsTableBody');
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/announcements`, {
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        const list = await res.json();
+                        tbody.innerHTML = list.map(a => `
+                            <tr>
+                                <td><strong>${escapeHtml(a.title)}</strong></td>
+                                <td>${escapeHtml(a.message)}</td>
+                                <td>${a.displayOrder}</td>
+                                <td><span class="badge ${a.active ? 'bg-success' : 'bg-secondary'}">${a.active ? 'Active' : 'Inactive'}</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-danger py-0" onclick="deleteAnnouncement(${a.id})"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        `).join('');
+                    }
+                } catch (e) {}
+            };
+
+            window.openAddAnnouncementModal = async function() {
+                const { value: formValues } = await Swal.fire({
+                    title: 'Add Announcement',
+                    html: `
+                        <input id="swal-ann-title" class="swal2-input" placeholder="Title">
+                        <textarea id="swal-ann-msg" class="swal2-textarea" placeholder="Announcement Message"></textarea>
+                    `,
+                    focusConfirm: false,
+                    showCancelButton: true,
+                    preConfirm: () => {
+                        return {
+                            title: document.getElementById('swal-ann-title').value,
+                            message: document.getElementById('swal-ann-msg').value
+                        }
+                    }
+                });
+
+                if (formValues && formValues.title && formValues.message) {
+                    await fetch(`${CONFIG.apiBase}/admin/announcements`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${adminToken}`
+                        },
+                        body: JSON.stringify(formValues)
+                    });
+                    fetchAdminAnnouncements();
+                    loadLiveAnnouncements();
+                }
+            };
+
+            window.deleteAnnouncement = async function(id) {
+                if (!confirm("Delete announcement?")) return;
+                await fetch(`${CONFIG.apiBase}/admin/announcements/${id}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': `Bearer ${adminToken}` }
+                });
+                fetchAdminAnnouncements();
+                loadLiveAnnouncements();
+            };
+
+            // Aarti Timings Tab
+            window.fetchAdminAarti = async function() {
+                if (!adminToken) return;
+                const tbody = document.getElementById('adminAartiTableBody');
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/aarti`);
+                    if (res.ok) {
+                        const list = await res.json();
+                        tbody.innerHTML = list.map(a => `
+                            <tr>
+                                <td><strong>${escapeHtml(a.name)}</strong></td>
+                                <td><code>${escapeHtml(a.time)}</code></td>
+                                <td>${escapeHtml(a.description || '')}</td>
+                                <td>${a.displayOrder}</td>
+                                <td><span class="badge ${a.active ? 'bg-success' : 'bg-secondary'}">${a.active ? 'Active' : 'Inactive'}</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-danger py-0" onclick="deleteAartiSchedule(${a.id})"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        `).join('');
+                    }
+                } catch (e) {}
+            };
+
+            window.openAddAartiModal = async function() {
+                const { value: formValues } = await Swal.fire({
+                    title: 'Add Aarti Schedule',
+                    html: `
+                        <input id="swal-aarti-name" class="swal2-input" placeholder="Aarti Name">
+                        <input id="swal-aarti-time" class="swal2-input" placeholder="Timing (e.g. 05:00 AM)">
+                        <input id="swal-aarti-desc" class="swal2-input" placeholder="Description">
+                    `,
+                    focusConfirm: false,
+                    showCancelButton: true,
+                    preConfirm: () => {
+                        return {
+                            name: document.getElementById('swal-aarti-name').value,
+                            time: document.getElementById('swal-aarti-time').value,
+                            description: document.getElementById('swal-aarti-desc').value
+                        }
+                    }
+                });
+
+                if (formValues && formValues.name && formValues.time) {
+                    await fetch(`${CONFIG.apiBase}/admin/aarti`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${adminToken}`
+                        },
+                        body: JSON.stringify(formValues)
+                    });
+                    fetchAdminAarti();
+                    loadLiveAarti();
+                }
+            };
+
+            window.deleteAartiSchedule = async function(id) {
+                if (!confirm("Delete this aarti timing?")) return;
+                await fetch(`${CONFIG.apiBase}/admin/aarti/${id}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': `Bearer ${adminToken}` }
+                });
+                fetchAdminAarti();
+                loadLiveAarti();
+            };
+
+            // Users Tab
+            window.fetchAdminUsers = async function() {
+                if (!adminToken) return;
+                const tbody = document.getElementById('adminUsersTableBody');
+                try {
+                    const res = await fetch(`${CONFIG.apiBase}/admin/users`, {
+                        headers: { 'Authorization': `Bearer ${adminToken}` }
+                    });
+                    if (res.ok) {
+                        const list = await res.json();
+                        tbody.innerHTML = list.map(u => `
+                            <tr>
+                                <td>${u.id}</td>
+                                <td><strong>${escapeHtml(u.name)}</strong></td>
+                                <td>${escapeHtml(u.email)}</td>
+                                <td><span class="badge bg-dark">${escapeHtml(u.role)}</span></td>
+                                <td><span class="badge ${u.enabled ? 'bg-success' : 'bg-danger'}">${u.enabled ? 'Enabled' : 'Disabled'}</span></td>
+                            </tr>
+                        `).join('');
+                    }
+                } catch (e) {}
+            };
+
+            function escapeHtml(str) {
+                if (str === null || str === undefined) return '';
+                return String(str)
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;');
+            }
+
+        })();
+    </script>
+</body>
+</html>
