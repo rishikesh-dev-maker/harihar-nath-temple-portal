@@ -4,7 +4,7 @@ A professional, production-ready digital gateway for the historic Baba Hariharna
 
 ## Project Overview
 
-The Baba Hariharnath Temple Portal is designed to bridge the gap between ancient Vedic traditions and modern digital convenience. Located at the sacred confluence of the Ganga and Gandak rivers, the temple attracts millions of devotees annually. This portal serves as the official administrative and devotional hub, managing everything from live ritual timings to secure pilgrim registrations.
+The Baba Hariharnath Temple Portal is designed to bridge the gap between ancient Vedic traditions and modern digital convenience. Located at the sacred confluence of the Ganga and Gandak rivers, the temple attracts millions of devotees annually. This portal serves as the official administrative and devotional hub, managing everything from live ritual timings to secure pilgrim registrations. 
 
 ## Problem Statement
 
@@ -138,5 +138,6 @@ Managing a high-traffic pilgrimage site involves significant logistical challeng
 **Rishikesh Kumar**  
 *Full Stack Developer*  
 Backend: Spring Boot | Frontend: JS/Bootstrap | Database: MySQL
-#   h a r i h a r - n a t h - t e m p l e - p o r t a l  
+#   h a r i h a r - n a t h - t e m p l e - p o r t a l 
+ 
  
